@@ -1,0 +1,71 @@
+ <html>
+ <head>
+  <title>FilterBypass Addon Options</title>
+  <link rel="stylesheet" property="stylesheet" href="style/style.css" type="text/css">
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <div class="c-container">
+    <div>
+
+      <!--div class="c-top-menu">
+        <div class="c-back-button">
+          <a href="#" class="c-back-button__link">
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0.60625L5.35312 0L0 5L5.35312 10L6 9.39688L1.29688 5L6 0.60625Z"/></svg>
+            <span>Back</span>
+          </a>
+        </div>
+      </div-->
+
+      <div class="c-inner">
+        <div class="c-site-lists js-site-lists">
+          <h3>Sites lists</h3>
+
+          <div class="c-site-list c-site-list--all js-site-list">
+            <ul class="c-site-list__items c-site-list__items-all js-site-list-items js-site-list-items-all" data-items-type="all">
+              <li>filterbypass.me</li>
+              <li>youtube.com</li>
+              <li>vimeo.com</li>
+              <li>dailymotion.com</li>
+              <li>twitch.tv</li>
+            </ul>
+
+            <button type="button" class="c-site-list__button js-site-lists-control" data-control-type="down"><img src="images/plus.svg" alt="Select">Add</button>
+          </div>
+
+          <div class="c-site-lists__controls">
+            <h3>Selected Domains To Proxy</h3>
+
+            <div class="c-site-lists__controls-inner">
+              <button type="button" class="c-site-lists__control js-site-lists-control" data-control-type="all-down"><img src="images/control-all-down.svg" alt="Select all"></button>
+              <button type="button" class="c-site-lists__control js-site-lists-control" data-control-type="down"><img src="images/control-down.svg" alt="Select"></button>
+              <button type="button" class="c-site-lists__control js-site-lists-control" data-control-type="up"><img src="images/control-up.svg" alt="Deselect"></button>
+              <button type="button" class="c-site-lists__control js-site-lists-control" data-control-type="all-up"><img src="images/control-all-up.svg" alt="Deselect all"></button>
+              <span class="c-site-lists__control-error js-site-lists-control-error">No item has been selected</span>
+            </div>
+          </div>
+
+          <div class="c-site-list c-site-list--selected js-site-list">
+            <ul class="c-site-list__items js-site-list-items js-site-list-items-selected" data-items-type="selected"></ul>
+          </div>
+
+          <div class="c-site-lists__footer">
+            <div class="c-site-lists__footer-column">
+              <p><span class="c-note">Note</span>Only select sites that are blocked for you proxying sites through auxillary servers might slow down your browsing experience.</p>
+            </div>
+            <div class="c-site-lists__footer-column">
+              <div class="c-site-lists__footer-buttons">
+                <button type="button" class="c-site-lists__reset js-site-lists-control" data-control-type="all-up"><img src="images/reset.svg" alt="Reset">Reset</button>
+                <!--button type="button" class="c-site-lists__save js-site-lists-save c-btn--press">Save</button-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="scripts.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,77 @@
+ <html>
+ <head>
+  <title>FilterBypass Addon PopUp</title>
+  <link rel="stylesheet" property="stylesheet" href="style/style.css" type="text/css">
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <div class="c-container">
+    <div>
+
+      <div class="c-top-menu">
+        <div class="c-option-button">
+          <button class="c-btn" id="go-to-options"><span class="c-option-button-hamburger"></span>Open Option</button>
+        </div>
+        <div class="c-button-holder">
+          <a href="https://twitter.com/filter_bypass" class="c-link-twitter" target="_blank"><img src="images/twitter.svg" alt="twitter">@filterbypass</a>
+        </div>
+        <div>
+          <a href="https://www.filterbypass.me/" target="_blank" class="link--main">Open FilterBypass</a>
+        </div>
+      </div>
+
+        <div class="c-inner" id="proxy_on" style="display: none;">
+            <div>
+                <img class="c-logo" src='images/logo-blocked.png'>
+            </div>
+            <!--Filterbypass is currently <span class="c-blocked">blocked</span-->
+            <br />
+            <button class="c-btn c-btn--violet">Happy Browsing</button>
+            <br />
+            We are actively proxying <a href="#" id="show-proxified-domains" class="link--gradient">sites</a>
+        </div>
+
+        <div class="c-inner" id="proxy_off">
+            <div>
+                <img class="c-logo" src='images/logo.png'>
+            </div>
+            <!--Filterbypass is currently <span class="c-not-blocked">Not Blocked</span-->
+            <br /><br />
+            <div class="c-proxified">
+                <img src="images/server.svg" alt="server proxy">
+                <p>No sites is being proxified, please select sites to proxy in <a class="link--alt" href="#" id="go-to-options-link">options</a> page</p>
+            </div>
+            <button class="c-btn c-btn--grey">Enable Proxy mode</button>
+        </div>
+
+      <div class="c-mode">
+        <div>
+          <span>Proxy Mode</span>
+        </div>
+        <div class="c-mode__inner">
+          <label class="c-switch">
+              <input type="checkbox" class="c-checkbox">
+              <span class="c-switch__slider c-switch__slider--round"></span>
+          </label>
+          <div class="c-tooltip">
+            <div class="c-tooltip__content">
+              <p>When Proxy Mode is enabled , this extension will proxy traffic to domains defined in options through our servers to evade censorship</p>
+            </div>
+            <i class="c-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-footer">
+        <p>
+          Not working for you ? Send an email to <br />
+          <a href="contact@filterbypass.me" class="link--alt">contact@filterbypass.me</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="scripts.js"></script>
+ </body>
+ </html>
